@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/397ca0392a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="https://www.aluracursos.com/"><img src="img/alura-color.png" id="logo-alura"></a>
+        </header>
+
+        <main>
+            <section>
+                <div class="background"></div>
+                <textarea id="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+                <p class="aviso"><i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos</p>
+            </section>
+
+            <section>
+                <button class="btn-encriptacion" id="btn-encryptar">Encriptar</button>
+                <button class="btn-desencriptacion" id="btn-desencryptar">Desencriptar</button>
+            </section>
+
+            <section class="container">
+                <img src="img/Muñeco.png" id="img-1">
+                <img src="img/emojin.png" id="img-2">
+                <p id="text-0" class="text-0">Ningún mensaje fue encontrado</p>
+                <p id="text-1" class="text-1">Ingrese el texto que desees encriptar o desencriptar.</p>
+                <textarea id="mensaje" readonly></textarea>
+                <button class="btn-copya" id="btn-copiar">Copiar</button>
+            </section>
+
+        </main>
+
+    
+
+    </body>
+
+    <script src="encriptacion.js"></script>
+
+    
+</html>

@@ -1,0 +1,229 @@
+body {
+    display:flex; 
+    flex-direction:column;
+    height:100vh; margin:0;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #E4E6EA;    
+}
+
+#logo-alura {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 30px;
+    top: 30px;
+}
+
+.aviso {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 570px;
+    left: 320px;
+    color: red;
+
+}
+
+
+#encriptar {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    width: 540px;
+    height: 400px;
+    background: transparent;
+    color: red;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#encriptar::-webkit-scrollbar {
+    display: none;
+}
+
+#encriptar::placeholder {
+    color: red;
+}
+
+/*Botones*/
+
+.btn-encriptacion {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 600px;
+    left: 150px;
+    background-color: #F7F2F6;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-encriptacion:hover {
+    background-color: red;
+    color: black;
+}
+
+.btn-desencriptacion {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 600px;
+    left: 450px;
+    background-color: #F7F2F6;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-desencriptacion:hover {
+    background-color: red;
+    color: black;
+}
+
+.btn-copya{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: absolute;
+    width: 250px;
+    height: 40px;
+    top: 580px;
+    left: 50px;
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.btn-copya:hover {
+    background-color: red;
+    color: black;
+}
+
+#mensaje {
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    width: 325px;
+    height: 590px;
+    background-color: transparent;
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 1%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+#mensaje::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #FED0D0;
+    width: 350px;
+    height: 640px;
+    left: 1100px;
+    top: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.text-enc, .text-des {
+    font-family: 'Inter', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-align: center;
+    color: red;
+}
+
+.text-0 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.3em;
+    position: absolute;
+    top: 310px;
+    left: 10px;
+    text-align: center;
+    color: red;
+}
+
+.text-1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    text-align: center;
+    color: red;
+}
+
+#img-1 {
+    position: absolute;
+    bottom: 60%;
+    left: 65px;
+    width: 250px;
+    height: 250px;
+}
+
+#img-2 {
+    position: fixed;
+    top: 500px;
+    left: 1230px;
+}
+
+
+
+
+/*Responsive*/
+
+@media screen and (max-width:480px) {
+    body {
+        height:100vh; margin:0;
+        background-size: 900px;
+        background-position-y: center;
+    }
+
+    #logo-alura {
+        width: 250px;
+        height: 250px;
+    }
+
+    #encriptar {
+        width: 300px;
+    }
+
+    .container {
+        position: absolute;
+        left: 200px;
+        top: 800px;
+        display: block;
+        width: 100px;
+    }
+
+    
+}
